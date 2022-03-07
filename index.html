@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Password Generator</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div class="generator">
+        <div class="generator__header">
+            <h1 class="generator__header_title">Generate a <br><span>random password</span></h1>
+            <h3 class="generator__header_subtitle">Never use an insecure password again.</h3>
+            <div class="generator__header_options">
+            <div class="generator__header_options_slide-container">
+                <label>
+                    <input type="checkbox"
+                           class="opt-checkbox"
+                           id="uppercase"
+                           name="uppercase"
+                           value="uppercase"
+                           >
+                        <span>UPPERCASE</span>
+                </label><br>
+                <label>
+                    <input type="checkbox"
+                           class="opt-checkbox"
+                           id="lowercase"
+                           name="lowercase"
+                           value="lowercase"
+                           >
+                        <span>lowercase</span>
+                </label><br>
+                <label>
+                    <input type="checkbox"
+                           class="opt-checkbox"
+                           id="numbers"
+                           name="numbers"
+                           value="numbers"
+                           >
+                        <span>Numbers</span>
+                </label><br>
+                <label>
+                    <input type="checkbox"
+                           class="opt-checkbox"
+                           id="symbols"
+                           name="symbols"
+                           value="symbols"
+                           >
+                        <span>Symbols</span>
+                </label>
+                <p class="slide-type">Password length: <span id="length-value"></span></p>
+                <div class="slide-container">
+                    <input type="range"
+                           min="6"
+                           max="15"
+                           value="8"
+                           class="opt-slider slider"
+                           id="length">
+                </div>
+            </div>
+            <div class="generator__header_options_button">
+                <p id="checkbox-error" class="error"></p>
+                <button class="generator__header_button btn" id="gen_pw">
+                    <span>Generate Passwords</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="generator__passwords">
+        <input class="generator__passwords_password password_area" type="text" id="pw_el_1" placeholder="* * * *">
+        <input class="generator__passwords_password password_area" type="text" id="pw_el_2" placeholder="* * * *">
+        <input class="generator__passwords_password password_area" type="text" id="pw_el_3" placeholder="* * * *">
+        <input class="generator__passwords_password password_area" type="text" id="pw_el_4" placeholder="* * * *">
+    </div>
+    <div id="snackbar"></div>
+</div>
+<footer>
+    <a href="#"></a>
+    <p>© 2022 AJ Davis</p>
+</footer>
+<!-- <script src="index.js"></script> -->
+</body>
+
+</html>
