@@ -82,7 +82,7 @@ function buildChars(passChars) {
         check = true
     }
     if(lowerEl.checked){
-        passChars =+ lowerChars
+        passChars += lowerChars
         check = true
     }
      if(numberEl.checked){
